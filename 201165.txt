@@ -1,0 +1,281 @@
+1) GitHub user: ack065 
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~
+$ git version
+git version 2.44.0.windows.1
+
+2) Ime namesteno na master
+
+3) Kreirano remote repo po ime SI_2024_lab1_201165
+
+4) so git init se inicijalizira git vo momentalnata datoteka, a so global user. dodavam email i moe ime kako flag
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165
+$ git init
+Initialized empty Git repository in C:/Users/Ace/Desktop/SI LABS/SI_2024_lab1_201165/.git/
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git config --global user.email "lavurovski.a65@gmail.com"
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git config --global user.name  "Aleksandar Lavurovski"
+
+
+5) so git remote add origin <link> se pravi povrzuvanje na lokalno so remote repo
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git remote add origin https://github.com/ack065/SI_2024_lab1_201165.git
+
+6) Formirana .md datoteka vo koja e vmetnato "Aleksandar, Lavurovski, 201165" i e pratena do remote repo
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ nano README.md
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 3558a03] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git log
+commit 3558a03e875dbe25823b4c1b862f4297486f8dcf (HEAD -> master)
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:33:32 2024 +0200
+
+    Initial commit
+
+
+
+7) Se spushtiv .java fajlovite i ja izvrshiv git add *.java komandata i potoa commit
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git add *.java
+warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches it
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git commit -m "Add starter code"
+[master 2903d64] Add starter code
+ 3 files changed, 47 insertions(+)
+ create mode 100644 SILab1Main.java
+ create mode 100644 SILab1_1.java
+ create mode 100644 SILab1_2.java
+
+
+8) Pravam push na remote repo-to za inicjalniot kod da bide prikacen.
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git push -u origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 1.15 KiB | 586.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ack065/SI_2024_lab1_201165.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'. 
+
+
+9) so git branch <name> pravam granki, potoa so git checkout manivriram do grankite
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git branch bug1
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git branch bug2
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git branch -a
+  bug1
+  bug2
+* master
+  remotes/origin/master
+
+10) git checkout bug1 me prefrluva od master-> bug1 
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+11) so git status dobivam info za promenite, potoa so commit go stage-nuvam fixot
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (bug1)
+$ git status
+On branch bug1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1_1.java
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (bug1)
+$ git commit SILab1_1.java -m "Fix worng condition in filterOddLengthStrings"
+warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches it
+[bug1 e7a75da] Fix worng condition in filterOddLengthStrings
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+12) Isto kako vo 10)
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+13) so git status dobivam info za promenite, potoa so commit go stage-nuvam fixot
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (bug2)
+$ git status
+On branch bug2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1_2.java
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (bug2)
+$ git commit SILab1_2.java -m "Fix worng condition in makeBigStringForm"
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches it
+[bug2 c85c339] Fix worng condition in makeBigStringForm
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+14) se vrativ vo git checkout bug1
+
+15) Posle dodavanje na povikot napraviv commit:
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (bug1)
+$ git commit SILab1Main.java -m "Call method filterOddLenghtStrings in main class"
+[bug1 fc30e4c] Call method filterOddLenghtStrings in main class
+ 1 file changed, 1 insertion(+)
+
+16) se vrativ vo git checkout bug2
+
+17) Posle dodavanje na povikot napraviv commit:
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (bug2)
+$ git commit SILab1Main.java -m "Call method makeBigStringForm in main class"
+[bug2 5eeaca0] Call method makeBigStringForm in main class
+ 1 file changed, 1 insertion(+)
+
+18) za da se sinhroniziraat, pravam git push origin bug1 i bug2 potoa.
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (bug2)
+$ git push origin bug2
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 691 bytes | 691.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/ack065/SI_2024_lab1_201165/pull/new/bug2
+remote:
+To https://github.com/ack065/SI_2024_lab1_201165.git
+ * [new branch]      bug2 -> bug2
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (bug2)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (bug1)
+$ git push origin bug1
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 750 bytes | 750.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/ack065/SI_2024_lab1_201165/pull/new/bug1
+remote:
+To https://github.com/ack065/SI_2024_lab1_201165.git
+ * [new branch]      bug1 -> bug1
+
+19) git checkout master
+
+20) so merge gi spojuvame bug 1 vo master
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git merge bug1
+Updating 2903d64..fc30e4c
+Fast-forward
+ SILab1Main.java | 1 +
+ SILab1_1.java   | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+21) za sinhronizacija samo pushnuvame promeni od master
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ack065/SI_2024_lab1_201165.git
+   2903d64..fc30e4c  master -> master
+
+22) git checkout bug2
+
+23) 
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/Desktop/SI LABS/SI_2024_lab1_201165 (bug2)
+$ git rebase master
+Successfully rebased and updated refs/heads/bug2.
+
+24) git checkout master
+
+25) poradi rebase-ot shto go napraviv, mergeot na bug2 ne vadi novosti vo master branchot.
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/Desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git merge bug2
+Already up to date.
+
+26)
+
+Ace@DESKTOP-P3AJ0RN MINGW64 ~/Desktop/SI LABS/SI_2024_lab1_201165 (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 289 bytes | 289.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ack065/SI_2024_lab1_201165.git
+   71c1bb9..66b4e6f  master -> master
+
+27) Bea azhurirani an gitHub bez koristenje na --force
+
+28) Napraveno i azhurirano an gitHub
+
+29) Napraveno.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,165 @@
+MASTER:
+
+commit 64ec83ee58fcc588fdb16ecea721c4d572c09ab8 (HEAD -> master, origin/master)
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Sat Apr 13 18:16:18 2024 +0200
+
+    Add INDEX.txt with documentation
+
+commit cc83c5004f38cc8acf8a8f335d71df5bcad19823
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Sat Apr 13 18:13:58 2024 +0200
+
+    Add logs to repo
+
+commit 66b4e6fe3e71b2af86d942b7294ad40d178fbceb (bug2)
+Merge: 71c1bb9 5eeaca0
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Sat Apr 13 18:04:07 2024 +0200
+
+    Merge branch 'bug1'
+
+commit 71c1bb96c075f7dbae5de9d1a03831daad671adf
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Sat Apr 13 18:03:38 2024 +0200
+
+    Updated main for merge conflict 1
+
+commit 4bf050b710e07f495e5bb9d65816f53d97918798
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Sat Apr 13 17:56:32 2024 +0200
+
+    Updated main for rebase conflict 2
+
+commit a001ce249a5db61ba4accfa75947c06b5924cc42
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Sat Apr 13 17:53:52 2024 +0200
+
+    Updated main for rebase conflict
+
+commit 5eeaca09ce4cb8b24a1bd0611fc3caa64d8159f9
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 21:02:13 2024 +0200
+
+    Call method makeBigStringForm in main class
+
+commit fc30e4cc347d1545c37c75c7ec96be06ae0e3305 (origin/bug1, bug1)
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:58:28 2024 +0200
+
+    Call method filterOddLenghtStrings in main class
+
+commit c85c339a0ddd22edd90aea004c9ed58acad38481
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:47:35 2024 +0200
+
+    Fix worng condition in makeBigStringForm
+
+commit e7a75dae0999d6616b689cefd16b43e440023e89
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:43:53 2024 +0200
+
+    Fix worng condition in filterOddLengthStrings
+
+commit 2903d640e2f19a7928fba9d36b330f516fe9438e
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:37:15 2024 +0200
+
+    Add starter code
+
+commit 3558a03e875dbe25823b4c1b862f4297486f8dcf
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:33:32 2024 +0200
+
+    Initial commit
+-------------------------------------------------------------
+BUG1:
+
+commit fc30e4cc347d1545c37c75c7ec96be06ae0e3305 (HEAD -> bug1, origin/bug1)
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:58:28 2024 +0200
+
+    Call method filterOddLenghtStrings in main class
+
+commit e7a75dae0999d6616b689cefd16b43e440023e89
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:43:53 2024 +0200
+
+    Fix worng condition in filterOddLengthStrings
+
+commit 2903d640e2f19a7928fba9d36b330f516fe9438e
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:37:15 2024 +0200
+
+    Add starter code
+
+commit 3558a03e875dbe25823b4c1b862f4297486f8dcf
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:33:32 2024 +0200
+
+    Initial commit
+
+-------------------------------------------------------------
+BUG2:
+
+commit 66b4e6fe3e71b2af86d942b7294ad40d178fbceb (HEAD -> bug2)
+Merge: 71c1bb9 5eeaca0
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Sat Apr 13 18:04:07 2024 +0200
+
+    Merge branch 'bug1'
+
+commit 71c1bb96c075f7dbae5de9d1a03831daad671adf
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Sat Apr 13 18:03:38 2024 +0200
+
+    Updated main for merge conflict 1
+
+commit 4bf050b710e07f495e5bb9d65816f53d97918798
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Sat Apr 13 17:56:32 2024 +0200
+
+    Updated main for rebase conflict 2
+
+commit a001ce249a5db61ba4accfa75947c06b5924cc42
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Sat Apr 13 17:53:52 2024 +0200
+
+    Updated main for rebase conflict
+
+commit 5eeaca09ce4cb8b24a1bd0611fc3caa64d8159f9
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 21:02:13 2024 +0200
+
+    Call method makeBigStringForm in main class
+
+commit fc30e4cc347d1545c37c75c7ec96be06ae0e3305 (origin/bug1, bug1)
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:58:28 2024 +0200
+
+    Call method filterOddLenghtStrings in main class
+
+commit c85c339a0ddd22edd90aea004c9ed58acad38481
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:47:35 2024 +0200
+
+    Fix worng condition in makeBigStringForm
+
+commit e7a75dae0999d6616b689cefd16b43e440023e89
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:43:53 2024 +0200
+
+    Fix worng condition in filterOddLengthStrings
+
+commit 2903d640e2f19a7928fba9d36b330f516fe9438e
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:37:15 2024 +0200
+
+    Add starter code
+
+commit 3558a03e875dbe25823b4c1b862f4297486f8dcf
+Author: Aleksandar Lavurovski <lavurovski.a65@gmail.com>
+Date:   Fri Apr 12 20:33:32 2024 +0200
+
+    Initial commit
+
